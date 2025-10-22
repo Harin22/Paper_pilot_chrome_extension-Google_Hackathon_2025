@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Paper Pilot",
+  "version": "0.1",
+  "description": "Uses built in AI api to summarize, rewrite and translate research papers for students easily.",
+
+  "icons": {
+    "128": "icon128.png"
+  },
+  
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "Open Paper Pilot",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

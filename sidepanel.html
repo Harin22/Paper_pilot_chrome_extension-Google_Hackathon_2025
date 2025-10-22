@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Paper Pilot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    .container { max-width: 400px; margin: 0 auto; }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h2 { margin: 0 0 10px 0; color: #667eea; }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 8px 0;
+    }
+    button:hover { background: #5568d3; }
+    #output {
+      white-space: pre-wrap;
+      line-height: 1.6;
+      color: #333;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>📄 Paper Pilot</h2>
+      <p>AI Research Assistant</p>
+    </div>
+    
+    <div class="card">
+      <button id="loadBtn">Load PDF</button>
+      <div id="status"></div>
+    </div>
+
+    <div class="card hidden" id="controls">
+      <button data-action="summarize">Summarize</button>
+      <button data-action="simplify">Simplify</button>
+    </div>
+
+    <div class="card">
+      <div id="output">Click "Load PDF" to start</div>
+    </div>
+  </div>
+  
+  <script src="lib/pdf.min.js"></script>
+  <script src="sidepanel.js" defer></script>
+</body>
+</html>
