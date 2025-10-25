@@ -77,34 +77,6 @@ The extension supports multiple AI backends:
    - Basic text simplification
    - Works without AI APIs
 
-## Troubleshooting
-
-### Common Issues
-
-**"PDF library not loaded yet"**
-- Wait a moment and try again
-- Refresh the page and reload the extension
-
-**"Please open a PDF file first!"**
-- Make sure you're on a PDF page
-- Try refreshing the PDF page
-- Check if the PDF is embedded in an iframe
-
-**"AI not available"**
-- Enable experimental AI features in Chrome flags
-- The extension will use fallback processing instead
-
-**PDF not loading**
-- Ensure the PDF URL is accessible
-- Check browser console for errors
-- Try with a different PDF file
-
-### Debug Mode
-1. Open Chrome DevTools (F12)
-2. Go to Console tab
-3. Look for error messages
-4. Check the extension's background page for logs
-
 ## Contributing
 
 1. Fork the repository
@@ -130,9 +102,10 @@ MIT License - see LICENSE file for details
 - PDF text extraction
 - AI summarization and simplification
 - Side panel interface
-- Professional design
+- basic design
 
 ---
 
 **Made with ❤️ for students and researchers**
+
 
