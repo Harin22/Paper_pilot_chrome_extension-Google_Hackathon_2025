@@ -4,35 +4,14 @@ A Chrome extension that uses built-in AI APIs to summarize, rewrite, and transla
 
 ## Features
 
-- 📄 **PDF Text Extraction**: Automatically extracts text from PDF files
-- 🤖 **AI Summarization**: Uses Chrome's built-in AI to create concise summaries
-- ✏️ **Text Simplification**: Rewrites complex academic text in simpler terms
-- 🔍 **Smart PDF Detection**: Works with various PDF viewers and embedded PDFs
-- 🎯 **Professional Interface**: Clean, business-like design
+-  **PDF Text Extraction**: Automatically extracts text from PDF files
+-  **AI Summarization**: Uses Chrome's built-in AI to create concise summaries
+-  **Text Simplification**: Rewrites complex academic text in simpler terms
+-  **Smart PDF Detection**: Works with various PDF viewers and embedded PDFs
+-  **Professional Interface**: Clean, business-like design
 
-## Installation
 
-### Method 1: Load as Unpacked Extension (Development)
-
-1. **Download the extension files**
-   - Clone or download this repository
-   - Extract the files to a folder
-
-2. **Enable Developer Mode**
-   - Open Chrome and go to `chrome://extensions/`
-   - Toggle "Developer mode" in the top right
-
-3. **Load the Extension**
-   - Click "Load unpacked"
-   - Select the folder containing the extension files
-   - The extension should appear in your extensions list
-
-4. **Enable Side Panel**
-   - Go to `chrome://flags/`
-   - Search for "side panel" and enable it
-   - Restart Chrome
-
-### Method 2: Install from Chrome Web Store (Coming Soon)
+### Install from Chrome Web Store (Coming Soon)
 
 *This extension will be available on the Chrome Web Store soon.*
 
@@ -45,24 +24,6 @@ A Chrome extension that uses built-in AI APIs to summarize, rewrite, and transla
    - **Summarize**: Get a concise summary of the paper
    - **Simplify**: Rewrite complex text in simpler terms
 
-## File Structure
-
-```
-paper-pilot-extension/
-├── manifest.json          # Extension configuration
-├── sidepanel.html         # Main UI interface
-├── sidepanel.js          # Core functionality
-├── sidepanel.css         # Styling
-├── background.js         # Background service worker
-├── content.js           # Content script
-├── icon128.png         # Extension icon
-├── lib/                # PDF.js library files
-│   ├── pdf.min.js
-│   ├── pdf.worker.min.js
-│   ├── pdf.mjs.map
-│   └── pdf.worker.mjs.map
-└── README.md           # This file
-```
 
 ## Technical Details
 
@@ -174,3 +135,4 @@ MIT License - see LICENSE file for details
 ---
 
 **Made with ❤️ for students and researchers**
+
