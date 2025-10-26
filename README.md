@@ -15,7 +15,7 @@ A Chrome extension that uses built-in AI APIs to summarize, rewrite, and transla
 
 *This extension will be available on the Chrome Web Store soon.*
 
-## Usage
+## How it works
 
 1. **Open a PDF file** in your browser (any PDF viewer)
 2. **Click the Paper Pilot icon** in the Chrome toolbar
@@ -39,45 +39,24 @@ A Chrome extension that uses built-in AI APIs to summarize, rewrite, and transla
 - `tabs`: Read tab URLs
 - `<all_urls>`: Access PDF files from any website
 
-### Browser Compatibility
-- Chrome 88+ (for side panel support)
-- Edge 88+ (for side panel support)
-- Requires "Allow access to file URLs" for local PDF files
-
 ## Development
-
-### Prerequisites
-- Chrome or Edge browser
-- Basic knowledge of JavaScript and Chrome Extensions
-
-### Building from Source
-1. Clone the repository
-2. No build process required - it's a pure JavaScript extension
-3. Load as unpacked extension in Chrome
 
 ### Key Files
 - `sidepanel.js`: Main logic for PDF processing and AI integration
 - `manifest.json`: Extension configuration and permissions
 - `sidepanel.html`: User interface
 
-## AI Features
-
-The extension supports multiple AI backends:
+## AI API that we used in this project (according to the hackathon):
 
 1. **Chrome Built-in AI** (preferred)
    - Uses `chrome.ai.summarizer` and `chrome.ai.rewriter`
    - Requires enabling experimental AI features
 
-2. **Window AI API** (fallback)
+2. **Window AI API** (backup)
    - Uses `window.ai` namespace
    - Alternative AI implementation
 
-3. **Fallback Processing** (always available)
-   - Simple text summarization
-   - Basic text simplification
-   - Works without AI APIs
-
-## Contributing
+## if you wanna Contribute? then..
 
 1. Fork the repository
 2. Create a feature branch
@@ -89,23 +68,6 @@ The extension supports multiple AI backends:
 
 MIT License - see LICENSE file for details
 
-## Support
-
-- Create an issue on GitHub for bugs
-- Check the troubleshooting section first
-- Ensure you're using a supported browser version
-
-## Changelog
-
-### v0.1
-- Initial release
-- PDF text extraction
-- AI summarization and simplification
-- Side panel interface
-- basic design
-
 ---
 
 **Made with ❤️ for students and researchers**
-
-
